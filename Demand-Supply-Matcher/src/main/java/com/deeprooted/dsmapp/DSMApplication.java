@@ -1,4 +1,4 @@
-package main.java.com.deeprooted.DSMApplication;
+package main.java.com.deeprooted.dsmapp;
 
 import main.java.com.deeprooted.beans.Trade;
 import main.java.com.deeprooted.service.DSMService;

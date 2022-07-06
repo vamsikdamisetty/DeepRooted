@@ -29,7 +29,7 @@ public class DSMTest {
 	public void testAInsertSupply() {
 		dsmService.insertOrder("s1 09:45 tomato 24/kg 100kg");
 		
-		assertTrue(dsmDao.getSupplyList("tomato").size() > 0);
+		assertTrue(!dsmDao.getSupplyList("tomato").isEmpty());
 		assertNull(dsmDao.getSupplyList("potato"));
 	}
 	
@@ -40,7 +40,7 @@ public class DSMTest {
 	public void testBInsertDemand() {
 		dsmService.insertOrder("d1 09:46 brinjal 20/kg 90kg");
 		
-		assertTrue(dsmDao.getDemandList("brinjal").size() > 0);
+		assertTrue(!dsmDao.getDemandList("brinjal").isEmpty());
 		assertNull(dsmDao.getDemandList("apple"));
 	}
 
