@@ -27,7 +27,7 @@ public class DSMServiceImpl implements DSMService{
 		}else if(isDemandOrder(order.getOrderId())){
 			processDemandOrder(order);
 		}else {
-			System.err.println("Please Enter a valid Order");
+			System.err.println("Please Enter a valid Order\n");
 		}
 
 	}

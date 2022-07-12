@@ -2,8 +2,8 @@ package main.java.com.deeprooted.beans;
 
 public class Trade {
 
-	private Order supply;
-	private Order demand;
+	private final Order supply;
+	private final Order demand;
 	private int quantity;
 	public static int profit;
 	
@@ -18,15 +18,11 @@ public class Trade {
 	public Order getSupply() {
 		return supply;
 	}
-	public void setSupply(Order supply) {
-		this.supply = supply;
-	}
+
 	public Order getDemand() {
 		return demand;
 	}
-	public void setDemand(Order demand) {
-		this.demand = demand;
-	}
+
 	public int getQuantity() {
 		return quantity;
 	}

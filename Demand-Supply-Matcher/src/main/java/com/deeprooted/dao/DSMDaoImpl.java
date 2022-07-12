@@ -9,9 +9,9 @@ import main.java.com.deeprooted.beans.Trade;
 
 public class DSMDaoImpl implements DSMDao{
 
-	HashMap<String, List<Order>> supplyLedger;
-	HashMap<String, List<Order>> demandLedger;
-	List<Trade> tradeStorage;
+	private HashMap<String, List<Order>> supplyLedger;
+	private HashMap<String, List<Order>> demandLedger;
+	private List<Trade> tradeStorage;
 	private static DSMDaoImpl dsmDaoImpl;
 	
 	private DSMDaoImpl() {
